@@ -1,0 +1,1313 @@
+<!DOCTYPE html><html class="theme-next mist use-motion" lang="zh-Hans"><head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "d5fbd31d"
+    });
+  daovoice('update');
+  </script>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32X32.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="&amp;#x4ECB;&amp;#x7ECD; &amp;#x4EE3;&amp;#x7801;&amp;#x5B9E;&amp;#x73B0; &amp;#x5229;&amp;#x7528;&amp;#x53CD;&amp;#x5C04;&amp;#x673A;&amp;#x5236;&amp;#x6539;&amp;#x8FDB;&amp;#x4EE3;&amp;#x7801;      &amp;#x5DE5;&amp;#x5382;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF08;Factory Pattern&amp;#xFF">
+<meta name="keywords" content="&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&#x5DE5;&#x5382;&#x6A21;&#x5F0F;">
+<meta property="og:url" content="http://yoursite.com/2018/05/10/gcsjms/index.html">
+<meta property="og:site_name" content="LazySleep">
+<meta property="og:description" content="&amp;#x4ECB;&amp;#x7ECD; &amp;#x4EE3;&amp;#x7801;&amp;#x5B9E;&amp;#x73B0; &amp;#x5229;&amp;#x7528;&amp;#x53CD;&amp;#x5C04;&amp;#x673A;&amp;#x5236;&amp;#x6539;&amp;#x8FDB;&amp;#x4EE3;&amp;#x7801;      &amp;#x5DE5;&amp;#x5382;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF08;Factory Pattern&amp;#xFF">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://www.runoob.com/wp-content/uploads/2014/08/factory_pattern_uml_diagram.jpg">
+<meta property="og:updated_time" content="2018-05-09T23:12:34.308Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="&#x5DE5;&#x5382;&#x6A21;&#x5F0F;">
+<meta name="twitter:description" content="&amp;#x4ECB;&amp;#x7ECD; &amp;#x4EE3;&amp;#x7801;&amp;#x5B9E;&amp;#x73B0; &amp;#x5229;&amp;#x7528;&amp;#x53CD;&amp;#x5C04;&amp;#x673A;&amp;#x5236;&amp;#x6539;&amp;#x8FDB;&amp;#x4EE3;&amp;#x7801;      &amp;#x5DE5;&amp;#x5382;&amp;#x6A21;&amp;#x5F0F;&amp;#xFF08;Factory Pattern&amp;#xFF">
+<meta name="twitter:image" content="http://www.runoob.com/wp-content/uploads/2014/08/factory_pattern_uml_diagram.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/05/10/gcsjms/">
+
+
+
+
+
+  <title>&#x5DE5;&#x5382;&#x6A21;&#x5F0F; | LazySleep</title>
+  
+
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/highlight.js/9.2.0/styles/androidstudio.min.css">
+  <script src="//cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">LazySleep</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">&#x5927;&#x5BB6;&#x3002;&#x3002;&#x3002;&#x771F;&#x7684;&#x662F;&#x3002;&#x3002;&#x3002;&#x3002;&#x5F88;&#x5389;&#x5BB3;&#x5462;</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            &#x9996;&#x9875;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            &#x6807;&#x7B7E;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            &#x5206;&#x7C7B;
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            &#x5F52;&#x6863;
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            &#x641C;&#x7D22;
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="&#x641C;&#x7D22;..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/10/gcsjms/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="LazySleep">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="LazySleep">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">&#x5DE5;&#x5382;&#x6A21;&#x5F0F;</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">&#x53D1;&#x8868;&#x4E8E;</span>
+              
+              <time title="&#x521B;&#x5EFA;&#x4E8E;" itemprop="dateCreated datePublished" datetime="2018-05-10T07:11:53+08:00">
+                2018-05-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">&#x5206;&#x7C7B;&#x4E8E;</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;/" itemprop="url" rel="index">
+                    <span itemprop="name">&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2018/05/10/gcsjms/" class="leancloud_visitors" data-flag-title="&#x5DE5;&#x5382;&#x6A21;&#x5F0F;">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x6B21;&#x6570;:</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">&#x5B57;&#x6570;&#x7EDF;&#x8BA1;:</span>
+                
+                <span title="&#x5B57;&#x6570;&#x7EDF;&#x8BA1;">
+                  1,156
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">&#x9605;&#x8BFB;&#x65F6;&#x957F; &#x2248;</span>
+                
+                <span title="&#x9605;&#x8BFB;&#x65F6;&#x957F;">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <div class="toc">
+
+<!-- toc -->
+<ul>
+<li><a href="#jie-shao"><strong>&#x4ECB;&#x7ECD;</strong></a></li>
+<li><a href="#dai-ma-shi-xian"><strong>&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</strong></a></li>
+<li><a href="#li-yong-fan-she-ji-zhi-gai-jin-dai-ma"><strong>&#x5229;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x6539;&#x8FDB;&#x4EE3;&#x7801;</strong></a></li>
+</ul>
+<!-- tocstop -->
+</div>
+
+<blockquote>
+<p>&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#xFF08;Factory Pattern&#xFF09;&#x662F; Java &#x4E2D;&#x6700;&#x5E38;&#x7528;&#x7684;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x4E4B;&#x4E00;&#x3002;&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;&#x5C5E;&#x4E8E;&#x521B;&#x5EFA;&#x578B;&#x6A21;&#x5F0F;&#xFF0C;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x6700;&#x4F73;&#x65B9;&#x5F0F;&#x3002;<br>&#x5728;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x65F6;&#x4E0D;&#x4F1A;&#x5BF9;&#x5BA2;&#x6237;&#x7AEF;&#x66B4;&#x9732;&#x521B;&#x5EFA;&#x903B;&#x8F91;&#xFF0C;&#x5E76;&#x4E14;&#x662F;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5171;&#x540C;&#x7684;&#x63A5;&#x53E3;&#x6765;&#x6307;&#x5411;&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+</blockquote>
+<h2><span id="jie-shao"><strong>&#x4ECB;&#x7ECD;</strong></span><a href="#jie-shao" class="header-anchor">#</a></h2><p>&#x610F;&#x56FE;&#xFF1A;<br>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x8BA9;&#x5176;&#x5B50;&#x7C7B;&#x81EA;&#x5DF1;&#x51B3;&#x5B9A;&#x5B9E;&#x4F8B;&#x5316;&#x54EA;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#x7C7B;&#xFF0C;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x4F7F;&#x5176;&#x521B;&#x5EFA;&#x8FC7;&#x7A0B;&#x5EF6;&#x8FDF;&#x5230;&#x5B50;&#x7C7B;&#x8FDB;&#x884C;&#x3002;&#x89E3;&#x51B3;&#x63A5;&#x53E3;&#x9009;&#x62E9;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x4F55;&#x65F6;&#x4F7F;&#x7528;&#xFF1A;&#x6211;&#x4EEC;&#x660E;&#x786E;&#x5730;&#x8BA1;&#x5212;&#x4E0D;&#x540C;&#x6761;&#x4EF6;&#x4E0B;&#x521B;&#x5EFA;&#x4E0D;&#x540C;&#x5B9E;&#x4F8B;&#x65F6;&#x3002;</p>
+<p>&#x5982;&#x4F55;&#x89E3;&#x51B3;&#xFF1A;&#x8BA9;&#x5176;&#x5B50;&#x7C7B;&#x5B9E;&#x73B0;&#x5DE5;&#x5382;&#x63A5;&#x53E3;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7684;&#x4EA7;&#x54C1;&#x3002;</p>
+<p>&#x5E94;&#x7528;&#x5B9E;&#x4F8B;&#xFF1A; </p>
+<ol>
+<li>&#x60A8;&#x9700;&#x8981;&#x4E00;&#x8F86;&#x6C7D;&#x8F66;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4ECE;&#x5DE5;&#x5382;&#x91CC;&#x9762;&#x63D0;&#x8D27;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x53BB;&#x7BA1;&#x8FD9;&#x8F86;&#x6C7D;&#x8F66;&#x662F;&#x600E;&#x4E48;&#x505A;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x4EE5;&#x53CA;&#x8FD9;&#x4E2A;&#x6C7D;&#x8F66;&#x91CC;&#x9762;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x3002;</li>
+<li>Hibernate &#x6362;&#x6570;&#x636E;&#x5E93;&#x53EA;&#x9700;&#x6362;&#x65B9;&#x8A00;&#x548C;&#x9A71;&#x52A8;&#x5C31;&#x53EF;&#x4EE5;&#x3002;</li>
+</ol>
+<p>&#x4F18;&#x70B9;&#xFF1A; </p>
+<ol>
+<li>&#x4E00;&#x4E2A;&#x8C03;&#x7528;&#x8005;&#x60F3;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x53EA;&#x8981;&#x77E5;&#x9053;&#x5176;&#x540D;&#x79F0;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002; </li>
+<li>&#x6269;&#x5C55;&#x6027;&#x9AD8;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x4EA7;&#x54C1;&#xFF0C;&#x53EA;&#x8981;&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#x7C7B;&#x5C31;&#x53EF;&#x4EE5;&#x3002;</li>
+<li>&#x5C4F;&#x853D;&#x4EA7;&#x54C1;&#x7684;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#xFF0C;&#x8C03;&#x7528;&#x8005;&#x53EA;&#x5173;&#x5FC3;&#x4EA7;&#x54C1;&#x7684;&#x63A5;&#x53E3;&#x3002;</li>
+</ol>
+<p>&#x7F3A;&#x70B9;&#xFF1A;<br>&#x6BCF;&#x6B21;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x4EA7;&#x54C1;&#x65F6;&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7C7B;&#x548C;&#x5BF9;&#x8C61;&#x5B9E;&#x73B0;&#x5DE5;&#x5382;&#xFF0C;&#x4F7F;&#x5F97;&#x7CFB;&#x7EDF;&#x4E2D;&#x7C7B;&#x7684;&#x4E2A;&#x6570;&#x6210;&#x500D;&#x589E;&#x52A0;&#xFF0C;&#x5728;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x4E0A;&#x589E;&#x52A0;&#x4E86;&#x7CFB;&#x7EDF;&#x7684;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x589E;&#x52A0;&#x4E86;&#x7CFB;&#x7EDF;&#x5177;&#x4F53;&#x7C7B;&#x7684;&#x4F9D;&#x8D56;&#x3002;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x4EC0;&#x4E48;&#x597D;&#x4E8B;&#x3002;</p>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#x4E8B;&#x9879;&#xFF1A;&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x521B;&#x5EFA;&#x7C7B;&#x6A21;&#x5F0F;&#xFF0C;&#x5728;&#x4EFB;&#x4F55;&#x9700;&#x8981;&#x751F;&#x6210;&#x590D;&#x6742;&#x5BF9;&#x8C61;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5DE5;&#x5382;&#x65B9;&#x6CD5;&#x6A21;&#x5F0F;&#x3002;&#x6709;&#x4E00;&#x70B9;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x662F;&#x590D;&#x6742;&#x5BF9;&#x8C61;&#x9002;&#x5408;&#x4F7F;&#x7528;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#xFF0C;&#x800C;&#x7B80;&#x5355;&#x5BF9;&#x8C61;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x53EA;&#x9700;&#x8981;&#x901A;&#x8FC7; new &#x5C31;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x521B;&#x5EFA;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x65E0;&#x9700;&#x4F7F;&#x7528;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#x3002;&#x5982;&#x679C;&#x4F7F;&#x7528;&#x5DE5;&#x5382;&#x6A21;&#x5F0F;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x5F15;&#x5165;&#x4E00;&#x4E2A;&#x5DE5;&#x5382;&#x7C7B;&#xFF0C;&#x4F1A;&#x589E;&#x52A0;&#x7CFB;&#x7EDF;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x3002;</p>
+</blockquote>
+<h2><span id="dai-ma-shi-xian"><strong>&#x4EE3;&#x7801;&#x5B9E;&#x73B0;</strong></span><a href="#dai-ma-shi-xian" class="header-anchor">#</a></h2><p>&#x6211;&#x4EEC;&#x5C06;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; Shape &#x63A5;&#x53E3;&#x548C;&#x5B9E;&#x73B0; Shape &#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x3002;&#x4E0B;&#x4E00;&#x6B65;&#x662F;&#x5B9A;&#x4E49;&#x5DE5;&#x5382;&#x7C7B; ShapeFactory&#x3002;</p>
+<p>FactoryPatternDemo&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x6F14;&#x793A;&#x7C7B;&#x4F7F;&#x7528; ShapeFactory &#x6765;&#x83B7;&#x53D6; Shape &#x5BF9;&#x8C61;&#x3002;&#x5B83;&#x5C06;&#x5411; ShapeFactory &#x4F20;&#x9012;&#x4FE1;&#x606F;&#xFF08;CIRCLE / RECTANGLE / SQUARE&#xFF09;&#xFF0C;&#x4EE5;&#x4FBF;&#x83B7;&#x53D6;&#x5B83;&#x6240;&#x9700;&#x5BF9;&#x8C61;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<p><img src="http://www.runoob.com/wp-content/uploads/2014/08/factory_pattern_uml_diagram.jpg" alt=""></p>
+<p><strong>&#x62BD;&#x8C61;&#x7C7B;</strong><br>Shape.java</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Shape</span> </span>{</span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span></span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p><strong>&#x5B9E;&#x4F53;&#x7C7B;</strong></p>
+<p>Rectangle.java</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Rectangle</span> <span class="keyword">implements</span> <span class="title">Shape</span> </span>{</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span> </span>{</span><br><span class="line">      System.out.println(<span class="string">&quot;Inside Rectangle::draw() method.&quot;</span>);</span><br><span class="line">   }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>Square.java</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Square</span> <span class="keyword">implements</span> <span class="title">Shape</span> </span>{</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span> </span>{</span><br><span class="line">      System.out.println(<span class="string">&quot;Inside Square::draw() method.&quot;</span>);</span><br><span class="line">   }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p>Circle.java</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Circle</span> <span class="keyword">implements</span> <span class="title">Shape</span> </span>{</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">draw</span><span class="params">()</span> </span>{</span><br><span class="line">      System.out.println(<span class="string">&quot;Inside Circle::draw() method.&quot;</span>);</span><br><span class="line">   }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p><strong>&#x521B;&#x5EFA;&#x5DE5;&#x5382;</strong></p>
+<p>ShapeFactory.java</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ShapeFactory</span> </span>{</span><br><span class="line">    </span><br><span class="line">   <span class="comment">//&#x4F7F;&#x7528; getShape &#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x5F62;&#x72B6;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x8C61;</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Shape <span class="title">getShape</span><span class="params">(String shapeType)</span></span>{</span><br><span class="line">      <span class="keyword">if</span>(shapeType == <span class="keyword">null</span>){</span><br><span class="line">         <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">      }        </span><br><span class="line">      <span class="keyword">if</span>(shapeType.equalsIgnoreCase(<span class="string">&quot;CIRCLE&quot;</span>)){</span><br><span class="line">         <span class="keyword">return</span> <span class="keyword">new</span> Circle();</span><br><span class="line">      } <span class="keyword">else</span> <span class="keyword">if</span>(shapeType.equalsIgnoreCase(<span class="string">&quot;RECTANGLE&quot;</span>)){</span><br><span class="line">         <span class="keyword">return</span> <span class="keyword">new</span> Rectangle();</span><br><span class="line">      } <span class="keyword">else</span> <span class="keyword">if</span>(shapeType.equalsIgnoreCase(<span class="string">&quot;SQUARE&quot;</span>)){</span><br><span class="line">         <span class="keyword">return</span> <span class="keyword">new</span> Square();</span><br><span class="line">      }</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">   }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<p><strong>&#x6D4B;&#x8BD5;</strong></p>
+<p>&#x4F7F;&#x7528;&#x8BE5;&#x5DE5;&#x5382;&#xFF0C;&#x901A;&#x8FC7;&#x4F20;&#x9012;&#x7C7B;&#x578B;&#x4FE1;&#x606F;&#x6765;&#x83B7;&#x53D6;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>FactoryPatternDemo.java</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FactoryPatternDemo</span> </span>{</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>{</span><br><span class="line">      ShapeFactory shapeFactory = <span class="keyword">new</span> ShapeFactory();</span><br><span class="line"></span><br><span class="line">      <span class="comment">//&#x83B7;&#x53D6; Circle &#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x5B83;&#x7684; draw &#x65B9;&#x6CD5;</span></span><br><span class="line">      Shape shape1 = shapeFactory.getShape(<span class="string">&quot;CIRCLE&quot;</span>);</span><br><span class="line"></span><br><span class="line">      <span class="comment">//&#x8C03;&#x7528; Circle &#x7684; draw &#x65B9;&#x6CD5;</span></span><br><span class="line">      shape1.draw();</span><br><span class="line"></span><br><span class="line">      <span class="comment">//&#x83B7;&#x53D6; Rectangle &#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x5B83;&#x7684; draw &#x65B9;&#x6CD5;</span></span><br><span class="line">      Shape shape2 = shapeFactory.getShape(<span class="string">&quot;RECTANGLE&quot;</span>);</span><br><span class="line"></span><br><span class="line">      <span class="comment">//&#x8C03;&#x7528; Rectangle &#x7684; draw &#x65B9;&#x6CD5;</span></span><br><span class="line">      shape2.draw();</span><br><span class="line"></span><br><span class="line">      <span class="comment">//&#x83B7;&#x53D6; Square &#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x5B83;&#x7684; draw &#x65B9;&#x6CD5;</span></span><br><span class="line">      Shape shape3 = shapeFactory.getShape(<span class="string">&quot;SQUARE&quot;</span>);</span><br><span class="line"></span><br><span class="line">      <span class="comment">//&#x8C03;&#x7528; Square &#x7684; draw &#x65B9;&#x6CD5;</span></span><br><span class="line">      shape3.draw();</span><br><span class="line">   }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h2><span id="li-yong-fan-she-ji-zhi-gai-jin-dai-ma"><strong>&#x5229;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x6539;&#x8FDB;&#x4EE3;&#x7801;</strong></span><a href="#li-yong-fan-she-ji-zhi-gai-jin-dai-ma" class="header-anchor">#</a></h2><p>&#x4F7F;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x6BCF;&#x6B21;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x4EA7;&#x54C1;&#x65F6;&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x73B0;&#x5DE5;&#x5382;&#x7684;&#x7F3A;&#x70B9;</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ShapeFactory</span> </span>{</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Object <span class="title">getClass</span><span class="params">(Class&lt;?extends Shape&gt; clazz)</span> </span>{</span><br><span class="line">        Object obj = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">try</span> {</span><br><span class="line">            obj = Class.forName(clazz.getName()).newInstance();</span><br><span class="line">        } <span class="keyword">catch</span> (ClassNotFoundException e) {</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        } <span class="keyword">catch</span> (InstantiationException e) {</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        } <span class="keyword">catch</span> (IllegalAccessException e) {</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">return</span> obj;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Rectangle rect = (Rectangle) ShapeFactory.getClass(Rectangle.class);</span><br><span class="line">rect.draw();</span><br><span class="line">Square square = (Square) ShapeFactory.getClass(Square.class);</span><br><span class="line">square.draw();</span><br></pre></td></tr></tbody></table></figure>
+<p>&#x8FD9;&#x6837;&#x5C31;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x73B0;&#x5DE5;&#x5382;,&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x5199;&#x4E00;&#x5806;&#x9009;&#x62E9;&#x5224;&#x65AD;&#xFF0C;&#x7EF4;&#x62A4;&#x65B9;&#x4FBF;</p>
+<p>&#x5728; <strong>jdk9</strong> &#x4E2D;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x6CDB;&#x578B;&#x7684;newInstance&#x65B9;&#x6CD5;&#x5DF2;&#x7ECF;&#x8FC7;&#x65F6;&#x3002;&#x91CD;&#x5199;&#x7684;getClass()&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> &lt;T&gt; <span class="function">T <span class="title">getClass</span><span class="params">(Class&lt;? extends T&gt; clazz)</span> </span>{</span><br><span class="line">    T obj = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">try</span> {</span><br><span class="line">        obj = clazz.getDeclaredConstructor().newInstance();</span><br><span class="line">    } </span><br><span class="line">        <span class="keyword">catch</span> (ReflectiveOperationException e) {</span><br><span class="line">        e.printStackTrace();  </span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> obj;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":100,"height":200},"mobile":{"show":false}});</script>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/&#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;/" rel="tag"># &#x8BBE;&#x8BA1;&#x6A21;&#x5F0F;</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/24/dapper/" rel="next" title="&#x7528;Dapper&#x8FDE;&#x63A5;mysql&#x8FDB;&#x884C;&#x589E;&#x5220;&#x6539;&#x67E5;">
+                <i class="fa fa-chevron-left"></i> &#x7528;Dapper&#x8FDE;&#x63A5;mysql&#x8FDB;&#x884C;&#x589E;&#x5220;&#x6539;&#x67E5;
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/10/tp5/" rel="prev" title="ThinkPHP5.0 &#x5B66;&#x4E60;&#x7B14;&#x8BB0;">
+                ThinkPHP5.0 &#x5B66;&#x4E60;&#x7B14;&#x8BB0; <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNTM2NC8xMTkwMA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            &#x6587;&#x7AE0;&#x76EE;&#x5F55;
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            &#x7AD9;&#x70B9;&#x6982;&#x89C8;
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="LazySleep">
+            
+              <p class="site-author-name" itemprop="name">LazySleep</p>
+              <p class="site-description motion-element" itemprop="description">&#x5982;&#x679C;&#x4E00;&#x89C9;&#x9192;&#x6765;&#x5C31;&#x80FD;&#x53D8;&#x6210;&#x5927;&#x4F6C;&#x3002;&#x3002;&#x3002;</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">30</span>
+                  <span class="site-state-item-name">&#x65E5;&#x5FD7;</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">&#x5206;&#x7C7B;</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-name">&#x6807;&#x7B7E;</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">&#x4ECB;&#x7ECD;#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">&#x4EE3;&#x7801;&#x5B9E;&#x73B0;#</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">&#x5229;&#x7528;&#x53CD;&#x5C04;&#x673A;&#x5236;&#x6539;&#x8FDB;&#x4EE3;&#x7801;#</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&#xA9; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">LazySleep</span>
+
+  
+</div>
+
+
+  <div class="powered-by">&#x7531; <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> &#x5F3A;&#x529B;&#x9A71;&#x52A8;</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">&#x4E3B;&#x9898; &#x2014; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("v2BbBEUNexmwuPsUPJHlYw0X-gzGzoHsz", "WGCiQWEFe7igkcavmvHcW8K9");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":100,"height":200},"mobile":{"show":false}});</script></body></html>
